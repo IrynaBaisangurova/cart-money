@@ -5,7 +5,7 @@ let products = [
         "price": 60,
         "unit": "шт",
         "desc": "Кількість обмежена",
-        "image": "../images/1eggs-faverol.jpg"
+        "image": "images/eggs-faverol.jpg"
     },
     {
        
@@ -14,7 +14,7 @@ let products = [
         "price": 60,
         "unit": "шт",
         "desc": "Кількість обмежена",
-        "image": "../images/2maran-eggs.jpg"
+        "image": "images/maran-eggs.jpg"
     },
     {
         "id": 4,
@@ -22,7 +22,7 @@ let products = [
         "price": 70,
         "unit": "шт",
         "desc": "Кількість обмежена",
-        "image": "../images/4uheilui.jpg"
+        "image": "images/uheilui.jpg"
     },
     {
        "id": 3,
@@ -30,7 +30,7 @@ let products = [
         "price": 70,
         "unit": "шт",
         "desc": "Кількість обмежена",
-        "image": "../images/3ameraukan.jpg"
+        "image": "images/ameraukan.jpg"
     },
     {
         "id": 5,
@@ -38,7 +38,7 @@ let products = [
         "price": 5,
         "unit": "шт", 
         "desc": "В наявності",
-        "image": "/images/5quail-eggs.jpg"
+        "image": "images/quail-eggs.jpg"
     },
     {
         "id": 6,
@@ -46,7 +46,7 @@ let products = [
         "price": 250,
         "unit": "кг",
         "desc": "В наявності",
-        "image": "/images/6quail.jpg"
+        "image": "images/quail.jpg"
     },
     {
         "id": 7,
@@ -54,7 +54,7 @@ let products = [
         "price": 0,
         "unit": "кг",
         "desc": "Очікується",
-        "image": "/images/7chicken.jpg"
+        "image": "images/chicken.jpg"
     },
     {
         "id": 8,
@@ -62,7 +62,7 @@ let products = [
         "price": 0,
         "unit": "кг",
         "desc": "Очікується",
-        "image": "/images/8turk.jpg"
+        "image": "images/turk.jpg"
     },
     {
         "id": 9,
@@ -70,7 +70,7 @@ let products = [
         "price": 0,
         "unit": "кг",
         "desc": "Очікується",
-        "image": "/images/9duck.jpg"
+        "image": "images/9duck.jpg"
     }
  
 ];
