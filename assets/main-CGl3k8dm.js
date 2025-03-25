@@ -5,11 +5,11 @@ import{S as u,$ as a,A as p,N as g,P as f}from"./vendor-CGgFmzkN.js";(function()
             <button onclick="addCart(${e.id})">Додати до кошика</button>`,n.appendChild(t)})}let l=[];function E(){var n=document.cookie.split("; ").find(e=>e.startsWith("listCart="));n?l=JSON.parse(n.split("=")[1]):l=[]}E();q();function q(){let n=document.querySelector(".listCart");n.innerHTML="";let e=document.querySelector(".totalQuantity"),t=0;l&&l.forEach(r=>{if(r){let i=document.createElement("div");i.classList.add("item"),i.innerHTML=`<img src="${r.image}">
                     <div class="content">
                         <div class="name">${r.name}</div>
-                        <div class="price">$${r.price} / 1 product</div>
+                        <div class="price">₴${r.price} / 1 product</div>
                     </div>
                     <div class="quantity">
                         <button onclick="changeQuantity(${r.id}, '-')">-</button>
                         <span class="value">${r.quantity}</span>
                         <button onclick="changeQuantity(${r.id}, '+')">+</button>
                     </div>`,n.appendChild(i),t=t+r.quantity}}),e.innerText=t}document.addEventListener("DOMContentLoaded",()=>{const n=document.querySelector(".button-prev"),e=document.querySelector(".button-next");let t;function r(){t&&(t.isBeginning?n.setAttribute("disabled","true"):n.removeAttribute("disabled"),t.isEnd?e.setAttribute("disabled","true"):e.removeAttribute("disabled"))}t=new u(".slider-wrapper",{watchOverflow:!0,centeredSlides:!0,loop:!0,direction:"horizontal",simulateTouch:!0,grabCursor:!0,spaceBetween:16,slidesPerView:1,speed:1e3,keyboard:{enabled:!0,onlyInViewport:!0},navigation:{nextEl:".button-next",prevEl:".button-prev"},on:{slideChange:r,init:r},breakpoints:{768:{slidesPerView:2},1200:{slidesPerView:3},1440:{slidesPerView:4}}})});
-//# sourceMappingURL=main-BnZ4qcOH.js.map
+//# sourceMappingURL=main-CGl3k8dm.js.map
