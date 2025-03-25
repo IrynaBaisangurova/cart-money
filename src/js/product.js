@@ -5,17 +5,17 @@ let products = [
         "name": "Яйця інкубаційні Фавероль",
         "price": 60,
         "unit": "шт",
-        "desc": "Кількість обмежена"  
+        "desc": "Кількість обмежена"
     },
     {
-       
+
         "id": 2,
         "image": "./img/products/maran-eggs.jpg",
         "name": "Яйця інкубаційні Маран",
         "price": 60,
         "unit": "шт",
         "desc": "Кількість обмежена"
-        
+
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@ let products = [
          "price": 70,
          "unit": "шт",
          "desc": "Кількість обмежена"
-        
+
      },
     {
         "id": 4,
@@ -33,17 +33,17 @@ let products = [
         "price": 70,
         "unit": "шт",
         "desc": "Кількість обмежена"
-        
+
     },
- 
+
     {
         "id": 5,
         "image": "./img/products/quail-eggs.jpg",
         "name": "Яйця перепілки",
         "price": 5,
-        "unit": "шт", 
+        "unit": "шт",
         "desc": "В наявності"
-        
+
     },
     {
         "id": 6,
@@ -52,7 +52,7 @@ let products = [
         "price": 250,
         "unit": "кг",
         "desc": "В наявності"
-       
+
     },
     {
         "id": 7,
@@ -61,7 +61,7 @@ let products = [
         "price": 0,
         "unit": "кг",
         "desc": "Очікується"
-        
+
     },
     {
         "id": 8,
@@ -70,7 +70,7 @@ let products = [
         "price": 0,
         "unit": "кг",
         "desc": "Очікується"
-       
+
     },
     {
         "id": 9,
@@ -79,9 +79,9 @@ let products = [
         "price": 0,
         "unit": "кг",
         "desc": "Очікується"
-        
+
     }
- 
+
 ];
 
 
@@ -107,7 +107,7 @@ close.addEventListener('click', function (){
 
 addDataToHTML(); // Викликаємо функцію для додавання товарів у список
 
-//show datas product in list 
+//show datas product in list
 function addDataToHTML(){
     let listProductHTML = document.querySelector('.listProduct');
     listProductHTML.innerHTML = '';
@@ -117,7 +117,7 @@ function addDataToHTML(){
         products.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
-            newProduct.innerHTML = 
+            newProduct.innerHTML =
             `<img src="${product.image}" alt="product name">
             <h2>${product.name}</h2>
             <div class="desc">${product.desc}</div>
@@ -148,7 +148,7 @@ checkCart();
 function addCart($idProduct){
     let productsCopy = JSON.parse(JSON.stringify(products));
     //// If this product is not in the cart
-    if(!listCart[$idProduct]) 
+    if(!listCart[$idProduct])
     {
         listCart[$idProduct] = productsCopy.filter(product => product.id == $idProduct)[0];
         listCart[$idProduct].quantity = 1;
@@ -176,11 +176,11 @@ function addCartToHTML(){
             if(product){
                 let newCart = document.createElement('div');
                 newCart.classList.add('item');
-                newCart.innerHTML = 
+                newCart.innerHTML =
                     `<img src="${product.image}">
                     <div class="content">
                         <div class="name">${product.name}</div>
-                        <div class="price">$${product.price} / 1 product</div>
+                        <div class="price">₴${product.price} / 1 product</div>
                     </div>
                     <div class="quantity">
                         <button onclick="changeQuantity(${product.id}, '-')">-</button>
@@ -207,7 +207,7 @@ function changeQuantity($idProduct, $type){
                 delete listCart[$idProduct];
             }
             break;
-    
+
         default:
             break;
     }
