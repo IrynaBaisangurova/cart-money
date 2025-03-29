@@ -1,7 +1,7 @@
 let products = [
     {
         "id": 1,
-        "image": "./img/products/eggs-faverol.jpg",
+        "image": "img/products/eggs-faverol.jpg",
         "name": "Яйця інкубаційні Фавероль",
         "price": 60,
         "unit": "шт",
@@ -10,7 +10,7 @@ let products = [
     {
 
         "id": 2,
-        "image": "./img/products/maran-eggs.jpg",
+        "image": "img/products/maran-eggs.jpg",
         "name": "Яйця інкубаційні Маран",
         "price": 60,
         "unit": "шт",
@@ -19,7 +19,7 @@ let products = [
     },
     {
         "id": 3,
-         "image": "./img/products/ameraukan.jpg",
+         "image": "img/products/ameraukan.jpg",
          "name": "Яйця інкубаційні Амераукан",
          "price": 70,
          "unit": "шт",
@@ -28,7 +28,7 @@ let products = [
      },
     {
         "id": 4,
-        "image": "./img/products/uheilui.jpg",
+        "image": "img/products/uheilui.jpg",
         "name": "Яйця інкубаційні Ухейілюй",
         "price": 70,
         "unit": "шт",
@@ -38,7 +38,7 @@ let products = [
 
     {
         "id": 5,
-        "image": "./img/products/quail-eggs.jpg",
+        "image": "img/products/quail-eggs.jpg",
         "name": "Яйця перепілки",
         "price": 5,
         "unit": "шт",
@@ -47,7 +47,7 @@ let products = [
     },
     {
         "id": 6,
-        "image": "./img/products/quail.jpg",
+        "image": "img/products/quail.jpg",
         "name": "М'ясо перепілки",
         "price": 250,
         "unit": "кг",
@@ -56,7 +56,7 @@ let products = [
     },
     {
         "id": 7,
-        "image": "./img/products/chicken.jpg",
+        "image": "img/products/chicken.jpg",
         "name": "М'ясо бойлера",
         "price": 0,
         "unit": "кг",
@@ -65,7 +65,7 @@ let products = [
     },
     {
         "id": 8,
-         "image": "./img/products/turk.jpg",
+         "image": "img/products/turk.jpg",
         "name": "М'ясо індика",
         "price": 0,
         "unit": "кг",
@@ -74,7 +74,7 @@ let products = [
     },
     {
         "id": 9,
-        "image": "./img/products/9duck.jpg",
+        "image": "img/products/9duck.jpg",
         "name": "М'ясо вутки",
         "price": 0,
         "unit": "кг",
